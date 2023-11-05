@@ -70,7 +70,7 @@ const insertarClientes = (clientes) => {
         botonEditar.classList.add("boton-editar", "bg-green-600", "hover:bg-green-500", "font-semibold", "px-2");
         enlaceEditarCliente.appendChild(botonEditar);
         botonEditar.addEventListener("click", () => {
-            localStorage.setItem("idClienteAEditar", cliente.id);
+            localStorage.setItem("idCliente", cliente.id);
         });
 
 

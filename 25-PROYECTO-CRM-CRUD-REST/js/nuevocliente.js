@@ -6,7 +6,6 @@ const formulario = document.querySelector("#formulario")
 const btnSubmit = document.querySelector('#formulario input[type="submit"]')
 const spinner = document.querySelector("#spinner")
 
-
   const formOBJ = {
     nombre: '',
     email: '',
@@ -90,12 +89,14 @@ const spinner = document.querySelector("#spinner")
   }
 
   function validarEmail(email){
+    //Esta expresion regular comprueba que el email introducido corresponde con la estructura de un email.
     const regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     const resultado = regex.test(email)
     return resultado
   }
 
   function validarTelefono(telefono){
+    //Esta expresion regular comprueba que telefono contega	9 cifras seguidas
     const regex = /^\d{9}$/;
     const resultado = regex.test(telefono)
     return resultado

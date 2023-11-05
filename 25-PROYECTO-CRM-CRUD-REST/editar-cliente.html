@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM - IndexedDB</title>
     <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/spinner.css"
 </head>
 <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
@@ -77,9 +78,20 @@
 
                             <input
                                 type="submit"
-                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold"
+                                class="bg-teal-600 w-full mt-5 p-2 text-white uppercase font-bold opacity-50"
                                 value="Guardar Cambios"
+                                disabled
                             />
+                            <div id="spinner" class="flex justify-center mt-10 hidden">
+                                <div class="sk-chase">
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
