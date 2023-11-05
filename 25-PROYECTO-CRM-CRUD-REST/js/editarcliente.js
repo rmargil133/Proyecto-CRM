@@ -5,7 +5,6 @@ const empresa = document.querySelector("#empresa")
 const formulario = document.querySelector("#formulario")
 const btnSubmit = document.querySelector('#formulario input[type="submit"]')
 const spinner = document.querySelector("#spinner")
-const idCliente = parseInt(localStorage.getItem("idCliente"))
 
   const formOBJ = {
     nombre: '',
